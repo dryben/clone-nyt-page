@@ -8,7 +8,7 @@ import {Single} from './components/Single'
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background: #dfacee;
+    background: gray;
   }
 `;
 
@@ -33,15 +33,6 @@ function App() {
         <p>
           New York City, the country’s largest metropolis and an engine of the American economy, is more than just another victim of the coronavirus. It is a canvas upon which nearly every element of the pandemic played out, from the collapse in tourism and employment to the rise in crime and the strain on city services.
         </p>
-        {/* <p>
-          <p>Photographs by Ashley Gilbertson</p>
-          <p>Produced by Renee Melides and Rebecca Lieberman</p>
-          <p>Text by Nelson D. Schwartz</p>
-          <em>March 9, 2021</em>
-        </p>
-        <p>
-        New York City, the country’s largest metropolis and an engine of the American economy, is more than just another victim of the coronavirus. It is a canvas upon which nearly every element of the pandemic played out, from the collapse in tourism and employment to the rise in crime and the strain on city services.
-        </p> */}
       </TextOnly>
       <Single 
         img="https://static01.nyt.com/newsgraphics/2021/01/11/economic-nyc-v2/assets/images/0002_20200823_nyt_pandemic_03748-1050_x2.jpg"
@@ -97,16 +88,29 @@ function App() {
         about="Times Square">
       </Single>
       <TextOnly>
+        <p><strong>Related Coverage</strong></p>
         <p>
-          The most fortunate residents were among the first to abandon the city. Over three months, the residential population in affluent neighborhoods like the Upper East Side, SoHo and Brooklyn Heights
-          <a href="https://www.nytimes.com/interactive/2020/05/15/upshot/who-left-new-york-coronavirus.html"> </a><a href="https://www.nytimes.com/interactive/2020/05/15/upshot/who-left-new-york-coronavirus.html">decreased by 40 percent or more</a>. 
-          Midweek felt like the weekend.
+          <strong>
+            <a href="https://www.nytimes.com/2021/03/10/insider/new-york-economy-photos.html">Times Insider: Photographing a New York in Need</a>
+            </strong>
+            <em>March 10, 2021</em>
+          <strong>
+            <a href="https://www.nytimes.com/2020/03/19/business/coronavirus-photos-economy.html">Witnessing the Birth of the Coronavirus Economy</a>
+            </strong>
+          <em>March 19, 2020</em>
+          <strong>
+            <a href="https://www.nytimes.com/2020/04/20/nyregion/new-york-economy-coronavirus.html">‘I Don’t Think the New York That We Left Will Be Back for Some Years’</a>
+            </strong>
+          <em>April 20, 2020</em>
+          <strong>
+            <a href="https://www.nytimes.com/2020/07/21/business/economy/coronavirus-cities.html">The Coronavirus Threatens the Luster of Superstar Cities</a>
+            </strong>
+          <em>July 21, 2020</em>
         </p>
         <p>
-          And while the growing ranks of homeless begged for change in areas like Downtown Manhattan, Lamborghinis sat parked outside crowded restaurants.
+          <em>Matisse gallery painting credit: 2021 Succession H. Matisse / Artists Rights Society (ARS), New York</em>
         </p>
       </TextOnly>
-      
     </Article>
     </>
   );
