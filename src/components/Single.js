@@ -3,9 +3,11 @@ import styled from 'styled-components';
 
 const StyledSingle = styled.div`
   height: 100vh;
+  background: white;
   display: flex;
   flex-direction: row-reverse;
   scroll-snap-align: start;
+  padding: 12px;
 `;
 
 const StyledImg = styled.img`
@@ -15,10 +17,7 @@ const StyledImg = styled.img`
 `
 
 const StyledCaption = styled.div`
-  top: 12px;
-  left: 24px;
-  bottom: auto;
-  flex: 1;
+  margin: auto 0 10vh 0;
 `
 
 export const Single = ({ children, img, when, about, ...props}) => {
