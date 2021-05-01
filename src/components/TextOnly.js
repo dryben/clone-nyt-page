@@ -3,8 +3,7 @@ import styled from 'styled-components';
 
 const StyledTextOnly = styled.div`
   background: white;
-  display: flex;
-  flex-direction: column;
+  scroll-snap-align: start;
 `;
 
 

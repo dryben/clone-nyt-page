@@ -4,6 +4,8 @@ import styled from 'styled-components';
 const StyledArticle = styled.article`
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 `;
 
 

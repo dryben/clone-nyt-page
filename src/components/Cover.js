@@ -3,8 +3,7 @@ import styled from 'styled-components';
 
 const StyledCover = styled.div`
   background: tomato;
-  display: flex;
-  flex-direction: column;
+  scroll-snap-align: start;
 `;
 
 
