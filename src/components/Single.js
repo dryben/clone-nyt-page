@@ -3,20 +3,33 @@ import styled from 'styled-components';
 
 const StyledSingle = styled.div`
   height: 100vh;
-  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
   scroll-snap-align: start;
 `;
 
 const StyledImg = styled.img`
-  width: 100%;
+  width: 72vw;
+  margin: 0 0 0 auto;
 `
 
-export const Single = ({ children, img, ...props}) => {
+const StyledCaption = styled.div`
+  top: 12px;
+  left: 24px;
+  bottom: auto;
+  flex: 1;
+`
+
+export const Single = ({ children, img, when, about, ...props}) => {
     return <StyledSingle {...props}>
       <StyledImg src={img}>
 
       </StyledImg>
-      {children}
+      <StyledCaption>
+        <p><strong>{when}</strong></p>
+        <p>{about}</p>
+        {children}
+      </StyledCaption>
       </StyledSingle>;
   };
   
