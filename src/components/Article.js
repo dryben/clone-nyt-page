@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const StyledArticle = styled.article`
   // display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   height: 100vh;
   overflow: auto;
   scroll-snap-type: y mandatory;

@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Slide} from './Slide'
 
 const StyledCover = styled.div`
   height: 100vh;
-  background: tomato;
+  background: gray;
   scroll-snap-align: start;
   position:relative;
 
@@ -18,6 +19,7 @@ const StyledCover = styled.div`
 
 const Title = styled.h1`
   position: absolute;
+  left: 20px;
   max-width: 80vw;
   height: 80vh;
   max-height: none;
@@ -37,12 +39,17 @@ const Img = styled.img`
 
 
 export const Cover = ({ children, img, when, about, ...props}) => {
-    img = img || "https://static01.nyt.com/newsgraphics/2021/01/11/economic-nyc-v2/assets/images/0001_20200930_nyt_pandemic_00387-1440_x2.jpg"
+    // img = img || "https://static01.nyt.com/newsgraphics/2021/01/11/economic-nyc-v2/assets/images/0001_20200930_nyt_pandemic_00387-1440_x2.jpg"
+    let background = img?
+      <Img src= {img}></Img>
+      : <Slide></Slide>
     let figcaption = about? 
       <figcaption><p><strong>{when}</strong></p><p>  {about}</p></figcaption> 
       : ''
     return <StyledCover {...props}>
-      <Img src= {img}></Img>
+      {/* <SlideFade></SlideFade> */}
+      {/* <Img src= {img}></Img> */}
+      {background}
       <Title>
         {children}
       </Title>

@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import { createGlobalStyle } from 'styled-components';
 import {Article} from './components/Article'
 import {Cover} from './components/Cover'
