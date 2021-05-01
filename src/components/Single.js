@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledSingle = styled.div`
-  // display: block;
+  height: 100vh;
   text-align: center;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 `;
 
 const StyledImg = styled.img`
