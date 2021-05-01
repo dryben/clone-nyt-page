@@ -5,10 +5,36 @@ const StyledCover = styled.div`
   height: 100vh;
   background: tomato;
   scroll-snap-align: start;
+  position:relative;
 `;
+
+const Title = styled.h1`
+  position: absolute;
+  max-width: 80vw;
+  height: 80vh;
+  max-height: none;
+  font-size: 12vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  gap: 12vh;
+`
+const Img = styled.img`
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+`
 
 
 export const Cover = ({ children, ...props}) => {
-    return <StyledCover {...props}>{children}</StyledCover>;
+    return <StyledCover {...props}>
+      <Img src="https://static01.nyt.com/newsgraphics/2021/01/11/economic-nyc-v2/assets/images/0001_20200930_nyt_pandemic_00387-1440_x2.jpg">
+      </Img>
+      <Title>
+        <span>A</span>
+        <span>City</span>
+        <span>Reptured</span>
+      </Title>
+      </StyledCover>;
   };
   

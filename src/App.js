@@ -19,7 +19,6 @@ function App() {
     <GlobalStyle />
     <Article>
       <Cover>
-        <h1>A City Ruptured</h1>
       </Cover>
       <TextOnly>
         <p>

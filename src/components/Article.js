@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledArticle = styled.article`
-  display: flex;
+  // display: flex;
   flex-direction: column;
   height: 100vh;
   overflow: auto;
