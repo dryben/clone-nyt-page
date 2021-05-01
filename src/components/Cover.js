@@ -6,6 +6,14 @@ const StyledCover = styled.div`
   background: tomato;
   scroll-snap-align: start;
   position:relative;
+
+  figcaption {
+    position: absolute;
+    left: auto;
+    bottom: 12px;
+    right: 24px;
+    color: white;
+  }
 `;
 
 const Title = styled.h1`
@@ -23,18 +31,22 @@ const Img = styled.img`
   position: absolute;
   height: 100%;
   max-height: 100vh;
-  // object-fit: cover;
+  object-fit: cover;
   width: 100%;
 `
 
 
-export const Cover = ({ children, img, ...props}) => {
+export const Cover = ({ children, img, when, about, ...props}) => {
     img = img || "https://static01.nyt.com/newsgraphics/2021/01/11/economic-nyc-v2/assets/images/0001_20200930_nyt_pandemic_00387-1440_x2.jpg"
+    let figcaption = about? 
+      <figcaption><p><strong>{when}</strong></p><p>  {about}</p></figcaption> 
+      : ''
     return <StyledCover {...props}>
       <Img src= {img}></Img>
       <Title>
         {children}
       </Title>
+      {figcaption}
       </StyledCover>;
   };
   

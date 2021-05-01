@@ -73,7 +73,8 @@ function App() {
       </TextOnly>
       <Cover
         img="https://static01.nyt.com/newsgraphics/2021/01/11/economic-nyc-v2/assets/images/0008_20201206_pandemic_iphone_00445-1440_x2.jpg"
-        >
+        when="Dec. 6, 2020"
+        about="Dining out in SoHo">
         <span>Inequality</span>
         {/* <h1></h1> */}
       </Cover>
