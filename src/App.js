@@ -3,6 +3,7 @@ import {Article} from './components/Article'
 import {Cover} from './components/Cover'
 import {TextOnly} from './components/TextOnly'
 import {Single} from './components/Single'
+import { Dyptich } from './components/Dyptich';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -85,6 +86,17 @@ function App() {
         when="OCT. 30, 2020"
         about="Times Square">
       </Single>
+      <Dyptich 
+        img={[
+          "https://static01.nyt.com/newsgraphics/2021/01/11/economic-nyc-v2/assets/images/0018_20201002_nyt_pandemic_00612-720_x2.jpg",
+          "https://static01.nyt.com/newsgraphics/2021/01/11/economic-nyc-v2/assets/images/0019_20200928_nyt_pandemic_02392-720_x2.jpg"
+        ]}
+        when={["OCT. 2, 2020","SEPT. 28, 2020"]}
+        about={[
+          "An occupational therapist working over Zoom in Hell’s Kitchen",
+          "Food delivery people in Harlem"
+        ]}>
+      </Dyptich>
       <TextOnly>
         <p><strong>Related Coverage</strong></p>
         <p>
