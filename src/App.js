@@ -19,6 +19,9 @@ function App() {
     <GlobalStyle />
     <Article>
       <Cover>
+        <span>A</span>
+        <span>City</span>
+        <span>Reptured</span>
       </Cover>
       <TextOnly>
         <p>
@@ -68,8 +71,11 @@ function App() {
         We spent months documenting the changing city as its economy frayed and split during the pandemic.
         </p>
       </TextOnly>
-      <Cover>
-        <h1>Inequality</h1>
+      <Cover
+        img="https://static01.nyt.com/newsgraphics/2021/01/11/economic-nyc-v2/assets/images/0008_20201206_pandemic_iphone_00445-1440_x2.jpg"
+        >
+        <span>Inequality</span>
+        {/* <h1></h1> */}
       </Cover>
       <TextOnly>
         <p>
@@ -85,7 +91,7 @@ function App() {
         about="The New York Stock Exchange">
       </Single>
       <Single 
-        img="https://static01.nyt.com/newsgraphics/2021/01/11/economic-nyc-v2/assets/images/0008_20201206_pandemic_iphone_00445-720_x2.jpg"
+        img="https://static01.nyt.com/newsgraphics/2021/01/11/economic-nyc-v2/assets/images/0010_20201030_iphone_pandemic_00138-1050_x2.jpg"
         when="OCT. 30, 2020"
         about="Times Square">
       </Single>

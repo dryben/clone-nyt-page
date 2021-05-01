@@ -11,6 +11,7 @@ const StyledSingle = styled.div`
 const StyledImg = styled.img`
   width: 72vw;
   margin: 0 0 0 auto;
+  object-fit: contain;
 `
 
 const StyledCaption = styled.div`

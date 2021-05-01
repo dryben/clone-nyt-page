@@ -21,19 +21,19 @@ const Title = styled.h1`
 `
 const Img = styled.img`
   position: absolute;
-  object-fit: cover;
   height: 100%;
+  max-height: 100vh;
+  // object-fit: cover;
+  width: 100%;
 `
 
 
-export const Cover = ({ children, ...props}) => {
+export const Cover = ({ children, img, ...props}) => {
+    img = img || "https://static01.nyt.com/newsgraphics/2021/01/11/economic-nyc-v2/assets/images/0001_20200930_nyt_pandemic_00387-1440_x2.jpg"
     return <StyledCover {...props}>
-      <Img src="https://static01.nyt.com/newsgraphics/2021/01/11/economic-nyc-v2/assets/images/0001_20200930_nyt_pandemic_00387-1440_x2.jpg">
-      </Img>
+      <Img src= {img}></Img>
       <Title>
-        <span>A</span>
-        <span>City</span>
-        <span>Reptured</span>
+        {children}
       </Title>
       </StyledCover>;
   };
