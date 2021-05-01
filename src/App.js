@@ -34,7 +34,7 @@ function App() {
           New York City, the country’s largest metropolis and an engine of the American economy, is more than just another victim of the coronavirus. It is a canvas upon which nearly every element of the pandemic played out, from the collapse in tourism and employment to the rise in crime and the strain on city services.
         </p>
       </TextOnly>
-      <Single 
+      <Single reverse
         img="https://static01.nyt.com/newsgraphics/2021/01/11/economic-nyc-v2/assets/images/0002_20200823_nyt_pandemic_03748-1050_x2.jpg"
         when="Aug. 23, 2020"
         about="Times Square">
@@ -77,7 +77,7 @@ function App() {
         A 10-minute cab ride separated the moneyed fortresses of Park Avenue, with their gloved doormen and spacious apartments, from housing projects in disrepair. White-collar workers were able to retreat to home offices. Service workers found themselves out of jobs.
         </p>
       </TextOnly>
-      <Single 
+      <Single reverse
         img="https://static01.nyt.com/newsgraphics/2021/01/11/economic-nyc-v2/assets/images/0009_20201221_pandemic_iphone_00010-720_x2.jpg"
         when="DEC. 21, 2020"
         about="The New York Stock Exchange">

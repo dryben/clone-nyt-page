@@ -1,13 +1,15 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 const StyledSingle = styled.div`
   height: 100vh;
   background: white;
   display: flex;
-  flex-direction: row-reverse;
   scroll-snap-align: start;
   padding: 12px;
+  ${props => props.reverse && css`
+    flex-direction: row-reverse;
+  `}
 `;
 
 const StyledImg = styled.img`
@@ -17,6 +19,7 @@ const StyledImg = styled.img`
 `
 
 const StyledCaption = styled.div`
+  padding-left: 10px;
   margin: auto 0 10vh 0;
 `
 
