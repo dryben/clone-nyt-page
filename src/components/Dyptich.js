@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
 
-const StyledSingle = styled.div`
+const StyledDyptich = styled.div`
   height: 100vh;
   background: white;
   display: flex;
@@ -29,7 +29,7 @@ const StyledCaption = styled.div`
 `
 
 export const Dyptich = ({ children, img, when, about, ...props}) => {
-    return <StyledSingle {...props}>
+    return <StyledDyptich {...props}>
       <StyledImg src={img[0]} top></StyledImg>
       <StyledImg src={img[1]}></StyledImg>
       <StyledCaption>
@@ -38,6 +38,6 @@ export const Dyptich = ({ children, img, when, about, ...props}) => {
         <p><strong>{when[1]}</strong></p>
         <p>{about[1]}</p>
       </StyledCaption>
-    </StyledSingle>;
+    </StyledDyptich>;
   };
   
