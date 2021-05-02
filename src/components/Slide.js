@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Fade } from 'react-slideshow-image';
 
 const EachFade = styled.div`
-  display: flex;
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -12,9 +11,6 @@ const EachFade = styled.div`
     height: 100%;
     object-fit: cover;
   }
-  // div {
-  //   width: 75%;
-  // }
 `
 
 const fadeImages = [
@@ -29,19 +25,13 @@ export const Slide = () => {
     <div className="slide-container">
       <Fade arrows={false} duration={1500} pauseOnHover={false}>
         <EachFade>
-          <div>
             <img src={fadeImages[0]} />
-          </div>
         </EachFade>
         <EachFade>
-          <div>
             <img src={fadeImages[1]} />
-          </div>
         </EachFade>
         <EachFade>
-          <div>
             <img src={fadeImages[2]} />
-          </div>
         </EachFade>
       </Fade>
     </div>
