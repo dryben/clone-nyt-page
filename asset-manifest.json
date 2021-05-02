@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/clone-nyt-page/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/clone-nyt-page/static/js/main.ed779c3b.chunk.js",
-    "main.js.map": "/clone-nyt-page/static/js/main.ed779c3b.chunk.js.map",
+    "main.js": "/clone-nyt-page/static/js/main.c4513af5.chunk.js",
+    "main.js.map": "/clone-nyt-page/static/js/main.c4513af5.chunk.js.map",
     "runtime-main.js": "/clone-nyt-page/static/js/runtime-main.6fa05c2c.js",
     "runtime-main.js.map": "/clone-nyt-page/static/js/runtime-main.6fa05c2c.js.map",
     "static/js/2.db0113a0.chunk.js": "/clone-nyt-page/static/js/2.db0113a0.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.6fa05c2c.js",
     "static/js/2.db0113a0.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.ed779c3b.chunk.js"
+    "static/js/main.c4513af5.chunk.js"
   ]
 }
